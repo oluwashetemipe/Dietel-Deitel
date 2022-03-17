@@ -1,6 +1,7 @@
 package Chap5;
 
-public class ProductOfOddIntegers {
+public class
+ProductOfOddIntegers {
     public static void main(String[] args){
         int i;
         int product = 1;
