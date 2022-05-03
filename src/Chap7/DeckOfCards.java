@@ -23,6 +23,28 @@ public class DeckOfCards {
             deck[count] = new Card(faces[count % 13], suits[count/13]);
         }
     }
+    //shuffle deck of cards with one pass algorithm
+    public void shuffle(){
+        //next call to method dealCard should start at deck[0] again
+        currentCard = 0;
+        //for each card, pick another random card (0-51) and swap them
+        for (int first = 0; first < deck.length; first++){
+            int second = random.nextInt(NUMBER_OF_CARDS);
 
+            //swap current card with randomly selected card
+            Card temp = deck[first];
+            deck[first] = deck[second];
+            deck[second] = temp;
+        }
+    }
+    //deal one card
+    public Card dealCard(){
+        //determine whether cards remain to be dealt
+        if (currentCard < deck.length){
+            return deck[currentCard++];//return current card in an array
+        }
+        else
+            return null;//return null indicating all cards were dealt
+    }
 }
 
