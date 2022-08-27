@@ -12,24 +12,24 @@ public class BasePlusCommissionEmployee {
                  "Base salary must be >= 0.0");
 
          this.baseSalary = baseSalary;
-         }
+    }
 
 
-         public void setBaseSalary(double baseSalary) {
-         if (baseSalary < 0.0)
+        public void setBaseSalary(double baseSalary) {
+         if (baseSalary < 0.0) {
              throw new IllegalArgumentException(
-                 "Base salary must be >= 0.0");
+                     "Base salary must be >= 0.0");
+         }
 
          this.baseSalary = baseSalary;
          }
 
          public double getBaseSalary(){
-         return baseSalary;
+            return baseSalary;
          }
-    public double earnings() {
-        return getBaseSalary() * commissionEmployee.getGrossSales() ;
-
-    }
+         public double earnings() {
+            return getBaseSalary() * commissionEmployee.earnings() ;
+        }
 
 }
 //Ex 9.4
