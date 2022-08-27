@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class TicTest {
     public static void main(String[] args) {
         TicTac ticTac = new TicTac();
-        ticTac.displayGame();
-        ticTac.play(1,2);
-        ticTac.displayGame();
+//        ticTac.displayGame();
+//        ticTac.play(1,2);
+//        ticTac.displayGame();
         int count = 1;
        do{
             System.out.println("Please enter your playing position");
