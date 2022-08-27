@@ -32,6 +32,15 @@ public class CommissionEmployee {
         return socialSecurityNumber;
     }
 
+
+  
+
+  
+
+  
+    public double earnings(){
+         return getCommissionRate() * getGrossSales();
+    }
     public double getGrossSales() {
         return grossSales;
     }
@@ -50,5 +59,6 @@ public class CommissionEmployee {
         if (commissionRate <= 0.0 || commissionRate >= 1.0)
             throw new IllegalArgumentException("Commission rate must be > 0.0 and < 1.0");
         this.commissionRate = commissionRate;
+
     }
 }
