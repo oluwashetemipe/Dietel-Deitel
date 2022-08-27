@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Archetypes.Configuration">
-<<<<<<< HEAD
-    <option name="archetypesFileLocation" value="archetypes.xml" />
-=======
->>>>>>> f87ea3747ca5ed4000774b426b7fdcca0baa793d
     <option name="workingDirectory" value="" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
