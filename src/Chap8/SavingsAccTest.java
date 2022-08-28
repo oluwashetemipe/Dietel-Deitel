@@ -1,3 +1,7 @@
+package Chap8;
+
+import Chap8.SavingsAccount;
+
 public class SavingsAccTest {
     public static void main(String[] args) {
         SavingsAccount savingsAccount1 = new SavingsAccount(2000.00);

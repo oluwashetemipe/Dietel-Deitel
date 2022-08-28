@@ -1,3 +1,7 @@
+package Chap8;
+
+import Chap8.TicTac;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 

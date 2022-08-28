@@ -1,3 +1,5 @@
+package Chap8;
+
 public class SavingsAccount {
     private static int annualInterestRate;
     private double savingsBalance;

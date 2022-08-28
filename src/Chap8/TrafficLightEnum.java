@@ -1,3 +1,5 @@
+package Chap8;
+
 public enum TrafficLightEnum {
     RED("30 seconds"),
     YELLOW("5 seconds"),

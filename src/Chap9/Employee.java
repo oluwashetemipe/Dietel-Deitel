@@ -37,4 +37,9 @@ public class Employee {
     public void setSsn(String ssn) {
         this.ssn = ssn;
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s%n%s",getFirstName(),getLastName(),getSsn());
+    }
 }
