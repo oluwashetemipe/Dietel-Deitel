@@ -1,3 +1,7 @@
+package Chap8;
+
+import Chap8.Complex;
+
 public class ComplexTest {
     public static void main(String[] args) {
         Complex complex = new Complex(4.7,8.4);
