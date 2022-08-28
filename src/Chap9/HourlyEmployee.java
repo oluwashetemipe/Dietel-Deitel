@@ -15,6 +15,10 @@ public class HourlyEmployee extends Employee{
     }
 
     public void setHours(double hours) {
+
+        if (hours < 0 || hours > 168) {
+            throw new IllegalArgumentException("Hours can only be between 0 and 168");
+        }
         this.hours = hours;
     }
 
@@ -23,6 +27,17 @@ public class HourlyEmployee extends Employee{
     }
 
     public void setWages(double wages) {
+        if (wages < 0){
+            throw new IllegalArgumentException("Wages cannot be less than 0");
+        }
         this.wages = wages;
+    }
+    public double earning(){
+        return getHours() * getWages();
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s: %s%n%s: %.2f","Hourly Employee",super.toString(),"Earning",earning());
     }
 }
